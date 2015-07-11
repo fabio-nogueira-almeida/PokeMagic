@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6624488B-C21D-480D-A17C-74757F89E846</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PokeMagic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8A7B56CC1FFD2D373E9057D5FD9B42F3CDC5304F</key>
+		<string>https://github.com/fabiotk/PokeMagic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PokeMagic.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8A7B56CC1FFD2D373E9057D5FD9B42F3CDC5304F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fabiotk/PokeMagic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8A7B56CC1FFD2D373E9057D5FD9B42F3CDC5304F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8A7B56CC1FFD2D373E9057D5FD9B42F3CDC5304F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PokeMagic</string>
+		</dict>
+	</array>
+</dict>
+</plist>

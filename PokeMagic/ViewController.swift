@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var imageView = UIImageView()
+    var pokebolaImageView = UIImageView(image: UIImage(named: "pokebola"))
+    var congratualtionLabel = UILabel(frame: CGRectMake(0, 0, 100, 100))
     
     let pokemons = ["bulbasaur", "snorlax", "charmander", "megaCharizard", "squirtle"]
     
@@ -20,7 +22,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.imageView.frame = CGRectMake(-100, 30, 100, 100);
+        self.pokebolaImageView.frame = CGRectMake(0, self.view.frame.size.height, 25, 25)
+        
+        self.congratualtionLabel.text = "Capturado!"
+        self.congratualtionLabel.textColor = UIColor.yellowColor()
+        self.congratualtionLabel.textAlignment = NSTextAlignment.Center
+        self.congratualtionLabel.backgroundColor = UIColor.blackColor()
+        self.congratualtionLabel.alpha = 0;
+        
         self.view.addSubview(self.imageView);
+        self.view.addSubview(self.pokebolaImageView)
+        self.view.addSubview(self.congratualtionLabel)
         
         self.changePokemon()        
         self.jungleAnimated()
@@ -34,8 +46,11 @@ class ViewController: UIViewController {
     
     func jungleAnimated() {
         UIView.animateWithDuration(5, animations: { () -> Void in
+            
             self.imageView.frame.origin.x = self.view.frame.width;
+
             }) { (finish) -> Void in
+                
                 if (finish == true) {
                     self.imageView.frame.origin.x = -self.imageView.frame.width;
                     self.changePokemon()
@@ -53,9 +68,25 @@ class ViewController: UIViewController {
     // MARK: IBOutlets Methods
 
     @IBAction func pokebolaVaiTouched(sender: AnyObject) {
+        let imageViewFrame = self.imageView.layer.presentationLayer().frame;
+        self.imageView.layer.removeAllAnimations();
+        self.imageView.frame = imageViewFrame;
+        
+        UIView.animateWithDuration(2, animations: { () -> Void in
+            
+            self.pokebolaImageView.frame = imageViewFrame;
+            
+            }) { (finish) -> Void in
+                if (finish == true) {
+                    self.congratualtionLabel.alpha = 1;
+                    self.congratualtionLabel.frame = imageViewFrame;
+                }
+        };
+        
     }
     
     @IBAction func showPokemonsCapturadosTouched(sender: AnyObject) {
+    
     }
 
 }
