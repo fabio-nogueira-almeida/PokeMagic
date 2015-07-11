@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hV2-Xu-Q53">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQe-VD-CMo">
-                                <rect key="frame" x="254" y="439" width="92" height="30"/>
+                                <rect key="frame" x="254" y="450" width="92" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Pokebola vai!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,32 +31,83 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-8L-8AP">
-                                <rect key="frame" x="223" y="499" width="155" height="30"/>
+                                <rect key="frame" x="223" y="488" width="155" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Pokemons capturados">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showPokemonsCapturadosTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MtA-FG-6C0"/>
+                                    <segue destination="dQB-3C-LAr" kind="show" id="aGh-In-Qtb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX5-8i-qFv">
+                                <rect key="frame" x="280" y="526" width="40" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="21m-kq-3tr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5hI-8L-8AP" firstAttribute="top" secondItem="HQe-VD-CMo" secondAttribute="bottom" constant="30" id="4KV-z8-kZX"/>
+                            <constraint firstItem="DX5-8i-qFv" firstAttribute="centerX" secondItem="5hI-8L-8AP" secondAttribute="centerX" id="2Vh-U4-583"/>
+                            <constraint firstItem="5hI-8L-8AP" firstAttribute="top" secondItem="HQe-VD-CMo" secondAttribute="bottom" constant="8" id="4KV-z8-kZX"/>
                             <constraint firstItem="HQe-VD-CMo" firstAttribute="centerX" secondItem="JTT-O9-mLX" secondAttribute="centerX" id="Gsi-xw-gtK"/>
                             <constraint firstItem="JTT-O9-mLX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Mpv-qs-FDS"/>
                             <constraint firstItem="JTT-O9-mLX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="NiO-n8-dki"/>
-                            <constraint firstItem="HQe-VD-CMo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="419" id="QGO-qU-zke"/>
+                            <constraint firstItem="HQe-VD-CMo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="386" id="QGO-qU-zke"/>
+                            <constraint firstItem="DX5-8i-qFv" firstAttribute="top" secondItem="5hI-8L-8AP" secondAttribute="bottom" constant="8" symbolic="YES" id="We6-KQ-g4j"/>
                             <constraint firstItem="JTT-O9-mLX" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="XOa-DR-9ST"/>
                             <constraint firstItem="HQe-VD-CMo" firstAttribute="centerX" secondItem="5hI-8L-8AP" secondAttribute="centerX" id="ZfR-J5-hQD"/>
                             <constraint firstAttribute="trailing" secondItem="JTT-O9-mLX" secondAttribute="trailing" id="xSI-y9-Hgh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Z9Q-0h-k7k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1001" y="274"/>
+        </scene>
+        <!--Pokemons Capturados-->
+        <scene sceneID="ilH-Bc-JUs">
+            <objects>
+                <viewController title="Pokemons Capturados" id="dQB-3C-LAr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JVK-ER-XSB"/>
+                        <viewControllerLayoutGuide type="bottom" id="yby-p8-N4e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kng-QZ-eF9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOZ-8X-vxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="274"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EYE-Vx-iuZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hV2-Xu-Q53" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gZo-YN-vll">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="EYU-XE-87V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKv-KB-UuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="274"/>
         </scene>
     </scenes>
     <resources>

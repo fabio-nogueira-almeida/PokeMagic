@@ -15,14 +15,22 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     var congratualtionLabel = UILabel(frame: CGRectMake(0, 0, 100, 100))
     
     let pokemons = ["bulbasaur", "snorlax", "charmander", "megaCharizard", "squirtle"]
+
+    var imageViewInitialFrame: CGRect!
+    var pokebolaInitialFrame: CGRect!
     
     // MARK: ViewController Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imageView.frame = CGRectMake(-100, 30, 100, 100);
-        self.pokebolaImageView.frame = CGRectMake(0, self.view.frame.size.height, 25, 25)
+        self.imageViewInitialFrame = CGRectMake(-100, 30, 100, 100)
+        self.pokebolaInitialFrame = CGRectMake(0, self.view.frame.size.height, 25, 25)
+        
+        self.navigationController?.navigationBarHidden = true
+        
+        self.imageView.frame = self.imageViewInitialFrame
+        self.pokebolaImageView.frame = self.pokebolaInitialFrame
         
         self.congratualtionLabel.text = "Capturado!"
         self.congratualtionLabel.textColor = UIColor.yellowColor()
@@ -84,10 +92,13 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         };
         
     }
-    
-    @IBAction func showPokemonsCapturadosTouched(sender: AnyObject) {
-    
-    }
 
+    @IBAction func resetTouched(sender: AnyObject) {
+        self.congratualtionLabel.alpha = 0
+        self.imageView.frame = self.imageViewInitialFrame
+        self.pokebolaImageView.frame = self.pokebolaInitialFrame
+        self.changePokemon()
+        self.jungleAnimated()
+    }
 }
 
