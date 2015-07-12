@@ -10,11 +10,22 @@ import UIKit
 
 class PokedexViewController: UIViewController {
 
+    @IBOutlet weak var apelidoTextField: UITextField!
+    @IBOutlet weak var nomeTextField: UITextField!
+    
+    // MARK:ViewController Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Pokédex"
+    }
+    
+    // MARK: IBOutlets Methods
+    
+    @IBAction func deleteTouched(sender: AnyObject) {
+    }
 
-        // Do any additional setup after loading the view.
+    @IBAction func saveTouched(sender: AnyObject) {
     }
 }

@@ -94,13 +94,13 @@
 			isa = PBXGroup;
 			children = (
 				70A38FED1B509D9800D42EE3 /* AppDelegate.swift */,
+				70A3900F1B51F82900D42EE3 /* PokedexViewController.swift */,
 				70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */,
 				70A38FEF1B509D9800D42EE3 /* ViewController.swift */,
 				70A38FF41B509D9800D42EE3 /* Images.xcassets */,
 				70A38FF61B509D9800D42EE3 /* LaunchScreen.xib */,
 				70A38FF11B509D9800D42EE3 /* Main.storyboard */,
 				70A38FEB1B509D9800D42EE3 /* Supporting Files */,
-				70A3900F1B51F82900D42EE3 /* PokedexViewController.swift */,
 			);
 			path = PokeMagic;
 			sourceTree = "<group>";
