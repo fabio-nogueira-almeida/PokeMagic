@@ -38,7 +38,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dQB-3C-LAr" kind="show" id="aGh-In-Qtb"/>
+                                    <segue destination="HZr-TF-kE9" kind="show" id="Ugz-eG-AB8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX5-8i-qFv">
@@ -73,23 +73,40 @@
             </objects>
             <point key="canvasLocation" x="1001" y="274"/>
         </scene>
-        <!--Pokemons Capturados-->
-        <scene sceneID="ilH-Bc-JUs">
+        <!--Collection View Controller-->
+        <scene sceneID="XG0-05-QAS">
             <objects>
-                <viewController title="Pokemons Capturados" id="dQB-3C-LAr" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JVK-ER-XSB"/>
-                        <viewControllerLayoutGuide type="bottom" id="yby-p8-N4e"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Kng-QZ-eF9">
+                <collectionViewController id="HZr-TF-kE9" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="baF-JN-ls4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tOZ-8X-vxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j8C-jk-XbA">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="S6w-pm-rnL">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="HZr-TF-kE9" id="mob-De-Lq5"/>
+                            <outlet property="delegate" destination="HZr-TF-kE9" id="CZC-uy-CHV"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUA-Ln-TwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="274"/>
+            <point key="canvasLocation" x="1683" y="274"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EYE-Vx-iuZ">

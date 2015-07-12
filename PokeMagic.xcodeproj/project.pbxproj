@@ -12,6 +12,7 @@
 		70A38FF31B509D9800D42EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A38FF11B509D9800D42EE3 /* Main.storyboard */; };
 		70A38FF51B509D9800D42EE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A38FF41B509D9800D42EE3 /* Images.xcassets */; };
 		70A38FF81B509D9800D42EE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A38FF61B509D9800D42EE3 /* LaunchScreen.xib */; };
+		70A3900E1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		70A38FF41B509D9800D42EE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70A38FF71B509D9800D42EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		70A38FFD1B509D9800D42EE3 /* PokeMagicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeMagicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonsCapturadosCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				70A38FF41B509D9800D42EE3 /* Images.xcassets */,
 				70A38FF61B509D9800D42EE3 /* LaunchScreen.xib */,
 				70A38FEB1B509D9800D42EE3 /* Supporting Files */,
+				70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */,
 			);
 			path = PokeMagic;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70A38FF01B509D9800D42EE3 /* ViewController.swift in Sources */,
+				70A3900E1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift in Sources */,
 				70A38FEE1B509D9800D42EE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +391,7 @@
 				70A390091B509D9800D42EE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70A3900A1B509D9800D42EE3 /* Build configuration list for PBXNativeTarget "PokeMagicTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +400,7 @@
 				70A3900C1B509D9800D42EE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
