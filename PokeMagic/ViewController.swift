@@ -21,13 +21,15 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     // MARK: ViewController Methods
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.imageViewInitialFrame = CGRectMake(-100, 30, 100, 100)
         self.pokebolaInitialFrame = CGRectMake(0, self.view.frame.size.height, 25, 25)
-        
-        self.navigationController?.navigationBarHidden = true
         
         self.imageView.frame = self.imageViewInitialFrame
         self.pokebolaImageView.frame = self.pokebolaInitialFrame
