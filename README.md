@@ -1,3 +1,3 @@
 # PokeMagic
 
-Projeto utilizando MagicRecord
+Projeto utilizando MagicalRecord
