@@ -13,7 +13,6 @@
 		70A38FF51B509D9800D42EE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A38FF41B509D9800D42EE3 /* Images.xcassets */; };
 		70A38FF81B509D9800D42EE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A38FF61B509D9800D42EE3 /* LaunchScreen.xib */; };
 		70A3900E1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */; };
-		70A390101B51F82900D42EE3 /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A3900F1B51F82900D42EE3 /* PokedexViewController.swift */; };
 		70CFDE331B5ADA6F00BAD9B8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70CFDE311B5ADA6F00BAD9B8 /* Model.xcdatamodeld */; };
 		70CFDE3E1B5AFC5300BAD9B8 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CFDE3D1B5AFC5300BAD9B8 /* Pokemon.swift */; };
 		EF4809B7FC3A9B7AD1904945 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DED0C62D1A452E5BF9CDC6 /* libPods.a */; };
@@ -39,7 +38,6 @@
 		70A38FF71B509D9800D42EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		70A38FFD1B509D9800D42EE3 /* PokeMagicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeMagicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonsCapturadosCollectionViewController.swift; sourceTree = "<group>"; };
-		70A3900F1B51F82900D42EE3 /* PokedexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
 		70CFDE2F1B5AD51C00BAD9B8 /* PokeMagic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeMagic-Bridging-Header.h"; sourceTree = "<group>"; };
 		70CFDE301B5AD9C800BAD9B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		70CFDE321B5ADA6F00BAD9B8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 			children = (
 				70CFDE2C1B5AD21700BAD9B8 /* Model */,
 				70A38FED1B509D9800D42EE3 /* AppDelegate.swift */,
-				70A3900F1B51F82900D42EE3 /* PokedexViewController.swift */,
 				70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */,
 				70A38FEF1B509D9800D42EE3 /* ViewController.swift */,
 				70A38FF41B509D9800D42EE3 /* Images.xcassets */,
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				70A38FF01B509D9800D42EE3 /* ViewController.swift in Sources */,
-				70A390101B51F82900D42EE3 /* PokedexViewController.swift in Sources */,
 				70A3900E1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift in Sources */,
 				70A38FEE1B509D9800D42EE3 /* AppDelegate.swift in Sources */,
 				70CFDE331B5ADA6F00BAD9B8 /* Model.xcdatamodeld in Sources */,

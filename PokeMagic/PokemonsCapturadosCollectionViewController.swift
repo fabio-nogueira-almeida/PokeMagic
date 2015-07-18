@@ -55,13 +55,4 @@ class PokemonsCapturadosCollectionViewController: UICollectionViewController {
         cell.backgroundView = pokemonImageView
         return cell
     }
-    
-    // MARK: UICollectionViewDelegate
-    
-    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
-        let pokedexViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PokedexIdentify") as! PokedexViewController
-        
-        self.navigationController?.pushViewController(pokedexViewController, animated: true)
-    }
 }
