@@ -103,12 +103,16 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         
     }
 
-    @IBAction func resetTouched(sender: AnyObject) {
+    @IBAction func searchTouched(sender: AnyObject) {
         self.congratualtionLabel.alpha = 0
         self.imageView.frame = self.imageViewInitialFrame
         self.pokebolaImageView.frame = self.pokebolaInitialFrame
         self.changePokemon()
         self.jungleAnimated()
+    }
+    
+    @IBAction func resetTouched(sender: AnyObject) {
+        Pokemon.MR_truncateAll();
     }
 }
 

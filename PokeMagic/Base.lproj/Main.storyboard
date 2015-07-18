@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX5-8i-qFv">
-                                <rect key="frame" x="280" y="526" width="40" height="30"/>
+                                <rect key="frame" x="280" y="554" width="40" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,16 +52,30 @@
                                     <action selector="resetTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="21m-kq-3tr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTU-as-dqI">
+                                <rect key="frame" x="210" y="516" width="181" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Procurar novos pokemons">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O1Z-bV-h3c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DX5-8i-qFv" firstAttribute="centerX" secondItem="5hI-8L-8AP" secondAttribute="centerX" id="2Vh-U4-583"/>
                             <constraint firstItem="5hI-8L-8AP" firstAttribute="top" secondItem="HQe-VD-CMo" secondAttribute="bottom" constant="8" id="4KV-z8-kZX"/>
+                            <constraint firstItem="vTU-as-dqI" firstAttribute="leading" secondItem="DX5-8i-qFv" secondAttribute="leading" constant="-70" id="B4s-4p-o3v"/>
                             <constraint firstItem="HQe-VD-CMo" firstAttribute="centerX" secondItem="JTT-O9-mLX" secondAttribute="centerX" id="Gsi-xw-gtK"/>
                             <constraint firstItem="JTT-O9-mLX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Mpv-qs-FDS"/>
                             <constraint firstItem="JTT-O9-mLX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="NiO-n8-dki"/>
+                            <constraint firstItem="DX5-8i-qFv" firstAttribute="top" secondItem="vTU-as-dqI" secondAttribute="bottom" constant="8" id="PkY-TP-VBT"/>
                             <constraint firstItem="HQe-VD-CMo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="386" id="QGO-qU-zke"/>
-                            <constraint firstItem="DX5-8i-qFv" firstAttribute="top" secondItem="5hI-8L-8AP" secondAttribute="bottom" constant="8" symbolic="YES" id="We6-KQ-g4j"/>
+                            <constraint firstItem="vTU-as-dqI" firstAttribute="top" secondItem="5hI-8L-8AP" secondAttribute="bottom" constant="-2" id="Rqa-vE-B25"/>
+                            <constraint firstItem="DX5-8i-qFv" firstAttribute="top" secondItem="5hI-8L-8AP" secondAttribute="bottom" constant="36" id="We6-KQ-g4j"/>
                             <constraint firstItem="JTT-O9-mLX" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="XOa-DR-9ST"/>
                             <constraint firstItem="HQe-VD-CMo" firstAttribute="centerX" secondItem="5hI-8L-8AP" secondAttribute="centerX" id="ZfR-J5-hQD"/>
                             <constraint firstAttribute="trailing" secondItem="JTT-O9-mLX" secondAttribute="trailing" id="xSI-y9-Hgh"/>
