@@ -14,7 +14,8 @@
 		70A38FF81B509D9800D42EE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A38FF61B509D9800D42EE3 /* LaunchScreen.xib */; };
 		70A3900E1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */; };
 		70A390101B51F82900D42EE3 /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A3900F1B51F82900D42EE3 /* PokedexViewController.swift */; };
-		70CFDE2E1B5AD22800BAD9B8 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CFDE2D1B5AD22800BAD9B8 /* Pokemon.swift */; };
+		70CFDE331B5ADA6F00BAD9B8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70CFDE311B5ADA6F00BAD9B8 /* Model.xcdatamodeld */; };
+		70CFDE3E1B5AFC5300BAD9B8 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CFDE3D1B5AFC5300BAD9B8 /* Pokemon.swift */; };
 		EF4809B7FC3A9B7AD1904945 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DED0C62D1A452E5BF9CDC6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +40,10 @@
 		70A38FFD1B509D9800D42EE3 /* PokeMagicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeMagicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A3900D1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonsCapturadosCollectionViewController.swift; sourceTree = "<group>"; };
 		70A3900F1B51F82900D42EE3 /* PokedexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
-		70CFDE2D1B5AD22800BAD9B8 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		70CFDE2F1B5AD51C00BAD9B8 /* PokeMagic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeMagic-Bridging-Header.h"; sourceTree = "<group>"; };
+		70CFDE301B5AD9C800BAD9B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		70CFDE321B5ADA6F00BAD9B8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		70CFDE3D1B5AFC5300BAD9B8 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		84DED0C62D1A452E5BF9CDC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAADE72F678200820A19B1A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D94D2FC287A155170A1DB0AD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +115,9 @@
 		70A38FEB1B509D9800D42EE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70CFDE301B5AD9C800BAD9B8 /* PrefixHeader.pch */,
 				70A38FEC1B509D9800D42EE3 /* Info.plist */,
+				70CFDE2F1B5AD51C00BAD9B8 /* PokeMagic-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,7 +125,8 @@
 		70CFDE2C1B5AD21700BAD9B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				70CFDE2D1B5AD22800BAD9B8 /* Pokemon.swift */,
+				70CFDE3D1B5AFC5300BAD9B8 /* Pokemon.swift */,
+				70CFDE311B5ADA6F00BAD9B8 /* Model.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -267,11 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70CFDE2E1B5AD22800BAD9B8 /* Pokemon.swift in Sources */,
 				70A38FF01B509D9800D42EE3 /* ViewController.swift in Sources */,
 				70A390101B51F82900D42EE3 /* PokedexViewController.swift in Sources */,
 				70A3900E1B51D06600D42EE3 /* PokemonsCapturadosCollectionViewController.swift in Sources */,
 				70A38FEE1B509D9800D42EE3 /* AppDelegate.swift in Sources */,
+				70CFDE331B5ADA6F00BAD9B8 /* Model.xcdatamodeld in Sources */,
+				70CFDE3E1B5AFC5300BAD9B8 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,9 +406,11 @@
 			baseConfigurationReference = CAADE72F678200820A19B1A6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = PokeMagic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeMagic/PokeMagic-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -409,9 +419,11 @@
 			baseConfigurationReference = D94D2FC287A155170A1DB0AD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = PokeMagic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeMagic/PokeMagic-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -480,6 +492,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		70CFDE311B5ADA6F00BAD9B8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				70CFDE321B5ADA6F00BAD9B8 /* Model.xcdatamodel */,
+			);
+			currentVersion = 70CFDE321B5ADA6F00BAD9B8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 70A38FE01B509D9800D42EE3 /* Project object */;
 }

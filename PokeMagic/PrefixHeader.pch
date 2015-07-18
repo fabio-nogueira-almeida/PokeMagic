@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  ADHONEP
+//
+//  Created by Fábio Nogueira de Almeida on 24/06/15.
+//  Copyright (c) 2015 Associação de Homens de Negócio do Evangelo Pleno. All rights reserved.
+//
+
+#ifndef ADHONEP_PrefixHeader_pch
+#define ADHONEP_PrefixHeader_pch
+
+#import "MagicalRecord.h"
+
+#endif

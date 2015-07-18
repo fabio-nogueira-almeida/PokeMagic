@@ -123,7 +123,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWe-aS-Hvv">
-                                <rect key="frame" x="16" y="102" width="260" height="30"/>
+                                <rect key="frame" x="16" y="58" width="260" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="cmc-Ri-Q3Y"/>
                                 </constraints>
@@ -131,24 +131,24 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRd-6a-efC">
-                                <rect key="frame" x="16" y="73" width="46" height="21"/>
+                                <rect key="frame" x="16" y="29" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XyG-lr-PHp">
-                                <rect key="frame" x="16" y="169" width="260" height="30"/>
+                                <rect key="frame" x="16" y="125" width="260" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apelido" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8X-Ih-LdB">
-                                <rect key="frame" x="16" y="140" width="59" height="21"/>
+                                <rect key="frame" x="16" y="96" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9A-J3-thb">
-                                <rect key="frame" x="85" y="222" width="49" height="30"/>
+                                <rect key="frame" x="85" y="178" width="49" height="30"/>
                                 <state key="normal" title="Deletar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -157,7 +157,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3h-Jl-tyG">
-                                <rect key="frame" x="164" y="222" width="43" height="30"/>
+                                <rect key="frame" x="164" y="178" width="43" height="30"/>
                                 <state key="normal" title="Salvar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

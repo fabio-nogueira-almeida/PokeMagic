@@ -50,6 +50,13 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     // MARK; Private Methods
     
+    func catchPokemon() {
+        MagicalRecord.saveWithBlock { (localContext : NSManagedObjectContext!) -> Void in
+            var pokemonCatched = Pokemon.MR_createEntityInContext(localContext)
+            pokemonCatched.image = UIImagePNGRepresentation(self.imageView.image)
+        }
+    }
+    
     func changePokemon() {
         self.imageView.image = UIImage(named: self.getRandomPokemon())
     }
@@ -90,6 +97,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
                 if (finish == true) {
                     self.congratualtionLabel.alpha = 1;
                     self.congratualtionLabel.frame = imageViewFrame;
+                    self.catchPokemon()
                 }
         };
         

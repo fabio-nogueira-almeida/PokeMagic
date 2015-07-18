@@ -1,16 +1,18 @@
 //
 //  Pokemon.swift
-//  PokeMagic
+//  
 //
 //  Created by Fábio Nogueira de Almeida on 18/07/15.
-//  Copyright (c) 2015 Fábio Nogueira de Almeida. All rights reserved.
+//
 //
 
-import UIKit
+import Foundation
+import CoreData
 
-class Pokemon: NSObject {
- 
-    var nome :String!
-    var apelido :String!
-    
+class Pokemon: NSManagedObject {
+
+    @NSManaged var nome: String
+    @NSManaged var apelido: String
+    @NSManaged var image: NSData
+
 }

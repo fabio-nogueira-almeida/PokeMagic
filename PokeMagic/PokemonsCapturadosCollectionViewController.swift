@@ -12,6 +12,9 @@ let reuseIdentifier = "PokemonCell"
 
 class PokemonsCapturadosCollectionViewController: UICollectionViewController {
 
+    
+    var pokemons : NSArray!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +27,11 @@ class PokemonsCapturadosCollectionViewController: UICollectionViewController {
         // Register cell classes
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.pokemons = Pokemon.MR_findAll()
+    }
 
     // MARK: UICollectionViewDataSource
 
@@ -33,13 +41,15 @@ class PokemonsCapturadosCollectionViewController: UICollectionViewController {
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.pokemons.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
-    
-        var pokemonImageView = UIImageView(image: UIImage(named: "snorlax"))
+        
+        var pokemon = self.pokemons.objectAtIndex(indexPath.row) as! Pokemon
+        
+        var pokemonImageView = UIImageView(image: UIImage(data: pokemon.image))
         pokemonImageView.frame = cell.frame
         
         cell.backgroundView = pokemonImageView
